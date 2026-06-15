@@ -1,0 +1,710 @@
+:root {
+    --primer-cl: rgb(0, 0, 101); /* azul */
+    --segundo-cl:rgba(102, 0, 0, 0.89); /* corinto */
+    --tercer-cl:rgb(255, 255, 0); /* amarillo */
+    --cuarto-cl:rgb(255, 255, 255); /* blanco */
+    --quinto-cl: linear-gradient(45deg, var(--primer-cl) 20%, var(--tercer-cl));
+}
+
+@media all and (min-width:620px){
+
+/*------------------- -fundamentalFPc ---------------------------------*/
+    * {box-sizing:border-box;padding: 0; margin: 0;}
+
+    html {scroll-behavior: smooth;}
+
+    body {position: relative;width: 100%;min-width: 100%;height: 400%;min-height: 400%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;align-items: center;justify-content:flex-start;
+        font-family: oswald;color: white;
+        background-color: rgb(58, 3, 58);/*border: solid 1px white;*/}
+
+/*------------------- -mainLayerFPc ---------------------------------*/
+
+    #main-layer {position:absolute;z-index: 1;width: 100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: grid;grid-template-rows: repeat(4, 1fr);grid-template-columns: 100%;
+        align-items: center;justify-items: center;
+        /*border: solid 1px white;*/}
+
+
+
+/*------------------- -usSectionFPc ---------------------------------*/
+    #us-s { width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: grid;grid-template-rows: 100%;grid-template-columns: repeat(2, 1fr);
+        align-items: center;justify-items: center;
+        background: linear-gradient(45deg, var(--primer-cl) 30%, transparent 100%), 
+        url(Img/Boat-Import.png);background-size: cover;}
+    
+
+    .cnt-us-cf {width:100%;min-width:100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/ perspective: 1000px;}
+
+    .at-us-cf {display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/}
+
+/*---------- -articleRightUsFPc / nosotros ----------------------*/
+#at-left-us  {width: 70%; height: 70%;}
+
+
+
+#at-left-us header {margin: 2%;width: 90%;}
+
+#at-left-us header h2 {width: 50%;
+    color: var(--primer-cl); font-family: oswald;font-size: 200%;
+    background-color: var(--tercer-cl);border-radius:15px 1px ;}
+
+#at-left-us p { font-size: 110%; color: var(--cuarto-cl);}
+
+
+/*---------- -articleRightUsFPc / logo ----------------------*/
+
+
+#at-right-us img {width: 100%;}
+.fade-off-ce {opacity: 0;transform: translateY(80px);transform: rotateX(-45deg); }
+
+.fade-on-ce {opacity: 1;transform: translateY(-20px);transform: rotateX(0deg);
+     transition: all 3s ease;}
+
+/*------------------- -srvSectionFPc ---------------------------------*/
+    #srv-s {width:100%;min-width: 100%;height:100%;min-height: 100%;
+        display: grid;grid-template-rows: 100%;grid-template-columns: repeat(2, 1fr);
+        align-items: center;justify-items: center;
+        background-color:var(--segundo-cl) ;/*border: solid 1px white;*/}
+
+    .cnt-srv-cf {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:space-evenly;
+        /*border: solid 1px white;*/}
+
+    .at-srv-cf {width:70%;min-width: 70%;height: 35%;min-height: 35%;overflow: hidden;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        border: solid 1px white;}
+
+
+
+/*------------------- -galSectionFPc ---------------------------------*/
+    #gal-s {position: relative; width:100%;min-width: 100%;height:100%;min-height: 100%;
+        display: grid;grid-template-rows: 100%;grid-template-columns: repeat(2, 1fr);
+        align-items: center;justify-items: center;
+        background-color:var(--segundo-cl) ;/*border: solid 1px white;*/}
+
+    .cnt-gal-cf {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:space-evenly;
+        /*border: solid 1px white;*/}
+
+    .at-gal-cf {width:70%;min-width: 70%;height: 35%;min-height: 35%;overflow: hidden;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        border: solid 1px white;border-radius:10px; }
+
+/*------------- -productSections  / en 8 articulos*/
+
+.item-img {width: 80%;}
+.item-img-cef:hover .item-img {width: 30%;transition: all 0.5s ease;}
+
+
+/*------------ -srvLeftOne / Motores ----------*/
+#at-left-one-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-one-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-one-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -srvLeftTwo / Motores ----------*/
+#at-left-two-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-two-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-two-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+/*------------ -srvRightOne / Motores ----------*/
+#at-right-one-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-one-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-one-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -srvRightTwo / Motores ----------*/
+#at-right-two-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-two-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-two-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+
+
+
+/*------------ -galLeftOne / Motores ----------*/
+#at-left-one-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-one-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-one-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -galLeftTwo / Motores ----------*/
+#at-left-two-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-two-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-two-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+/*------------ -galRightOne / Motores ----------*/
+#at-right-one-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-one-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-one-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -galRightTwo / Motores ----------*/
+#at-right-two-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-two-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-two-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+    
+/*------------------- -ctcSectionFPc ---------------------------------*/
+    #ctc-s {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: grid;grid-template-rows: 100%;grid-template-columns: repeat(2, 1fr);
+        align-items: center;justify-items: center;
+       background: linear-gradient(45deg, var(--cuarto-cl) 20%, transparent),
+       url(Img/i-e-1.jpg);background-size: cover; /*border: solid 1px white;*/}
+
+    .cnt-ctc-cf {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/}
+
+    .at-ctc-cf {width:90%;min-width: 90%;height: 70%;min-height: 70%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/}
+
+/*---------- -articleLeftFPc  / visitanos -----------------*/
+
+#at-left-ctc {width: 80%;min-width: 80%;
+    display:flex;flex-direction: column;flex-wrap:nowrap;
+    align-items: flex-start;justify-content: center; color: var(--primer-cl);}
+
+#at-left-ctc header {padding-bottom: 9%;margin-bottom:15%; width:100%;min-width: 100%;height: 15%;
+    font-size: 120%;
+    display: flex;flex-direction: column;flex-wrap: nowrap;
+    align-items: center;justify-content: flex-start;
+     background-color: var(--segundo-cl) ;color:var(--tercer-cl);
+     border-radius: 0px 35px;
+    }
+
+#at-left-ctc h3 {font-size: 140%;font-family: oswald;}
+
+#ctc-info {width: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;justify-content: flex-start;}
+
+#ctc-nets {width: 100%;
+    display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 100%;
+    align-items: center;justify-content: flex-start;}
+
+#ctc-nets span {display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: flex-start;}
+
+#ctc-nets span img {width: 20%;}
+
+#at-left-ctc footer {padding-top: 4%; width: 100%;min-width: 100%;font-size: 130%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items:center;justify-content:center;}
+
+/*---------- -articleRightFPc  / contactanos -----------------*/
+
+#at-right-ctc {width: 80%;min-width:80%;color: var(--primer-cl);
+    display:flex;flex-direction: column;flex-wrap:nowrap;
+    align-items: flex-start;justify-content: center;}
+
+#at-right-ctc header {padding-bottom:4%; width: 100%;min-width: 100%;height: 18%;
+    font-size:120%;
+    display: flex;flex-direction: column; flex-wrap: nowrap;
+    align-items: center;justify-content: center;
+    background-color: var(--segundo-cl);color: var(--tercer-cl);
+    border-radius: 0px 35px;
+}
+
+
+
+/*---------   -formPageFPc / -----------------------*/
+
+#at-right-ctc form {width: 100%;min-width: 100%;}
+
+#at-right-ctc form  .npt {width: 95%;min-width: 95%;color:var(--segundo-cl);
+    font-size: 120%;font-family: oswald;
+    
+    background-color: transparent;border:solid var(--segundo-cl) 2px; border-radius: 8px;}
+
+#at-right-ctc form  .sbmt {width: 47%;min-width: 47%;color:var(--primer-cl);
+    font-family: oswald;font-size: 110%;color: var(--segundo-cl);
+    background-color:var(--tercer-cl);border:0; border-radius: 8px;}
+    
+
+/*----------------    -menuLayerFPc  --------------------------*/
+
+#menu-layer {position: fixed;z-index: 4;width:100%;min-width: 100%;height:50px;min-height:50px;
+    display: grid;grid-template-columns: 35% 65%;grid-template-rows: 100%;
+    /*border: solid 1px white;*/}
+
+#brand-s-menu {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+    display:grid;grid-template-rows: 100%;grid-template-columns: 30% 70%;
+    align-items: center;justify-items: center;
+    /*border: solid 1px white;*/}
+
+
+
+.brand-cf {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: row;flex-wrap: wrap;
+        align-items: center;justify-content:center;
+        background-color: var(--primer-cl);/*border: solid 1px white;*/}
+
+#logo-mn {width:90%;}
+
+#nav-menu {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+    display: grid;grid-template-rows: 100%;grid-template-columns: repeat(4, 1fr);
+    align-items: center;justify-items: center;
+    background-color: var(--tercer-cl);/*border: solid 1px white;*/}
+
+#nav-menu a {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content:center;
+    text-decoration: none;font-size: 130%;
+    /*border: solid 1px white;*/
+    transition: all 0.5s ease;}
+
+#nav-menu a:hover {background-color:var(--segundo-cl); color: yellow;font-size: 140%;}
+
+.us-active {color: rgb(255, 255, 0); background-color: var(--segundo-cl);}
+.srv-active { color: yellow; background-color: var(--segundo-cl);}
+.gal-active {color: yellow; background-color: var(--segundo-cl);}
+.ctc-active {color: yellow;background-color: var(--segundo-cl);}
+
+}
+
+@media all and (max-width:620px){
+
+
+/*------------------- -fundamentalFPh ---------------------------------*/
+    * {box-sizing:border-box;padding: 0; margin: 0;}
+
+    html {scroll-behavior: smooth;}
+
+    body {position: relative;width: 100%;min-width: 100%;height: 400%;min-height: 400%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;align-items: center;justify-content:flex-start;
+        font-family: oswald;color: white;
+        background-color: rgb(58, 3, 58);/*border: solid 1px white;*/}
+
+/*------------------- -mainLayerFPh ---------------------------------*/
+
+    #main-layer {position: absolute;z-index: 1;width: 100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: grid;grid-template-rows: repeat(4, 1fr);grid-template-columns: 100%;
+        align-items: center;justify-items: center;
+        /*border: solid 1px white;*/}
+
+
+
+/*------------------- -usSectionFPh ---------------------------------*/
+    #us-s { width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: grid;grid-template-rows: repeat(2, 1fr);grid-template-columns: 100%;
+        align-items: center;justify-items: center;
+        background: linear-gradient(45deg, var(--primer-cl) 30%, transparent 100%), 
+        url(Img/Boat-Import.png);background-size: cover;}
+    
+
+    .cnt-us-cf {width:100%;min-width:100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/}
+
+    .at-us-cf {display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/}
+
+/*---------- -articleRightUsFPh / nosotros ----------------------*/
+#at-left-us  {width: 90%; height: 90%; }
+
+#at-left-us header {margin: 2%;width: 90%;}
+
+#at-left-us header h2 {width: 70%;
+    color: var(--primer-cl); font-family: oswald;font-size: 200%;
+    background-color: var(--tercer-cl);border-radius:15px 1px ;}
+
+#at-left-us p { font-size: 100%; color: var(--cuarto-cl);}
+
+
+/*---------- -articleRightUsFPh / logo ----------------------*/
+
+
+#at-left-us {opacity: 1;}
+#at-right-us {opacity: 1;}
+#at-right-us img {width: 100%;}
+
+.fade-on {opacity: 0; }
+
+/*------------------- -srvSectionFPh ---------------------------------*/
+    #srv-s {width:100%;min-width: 100%;height:100%;min-height: 100%;
+        display: grid;grid-template-rows: 100%;grid-template-columns: repeat(2, 1fr);
+        align-items: center;justify-items: center;
+        background-color:var(--segundo-cl) ;/*border: solid 1px white;*/}
+
+    .cnt-srv-cf {width:100%;min-width:100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:space-evenly;
+        /*border: solid 1px white;*/}
+
+    .at-srv-cf {width:90%;min-width:90%;height: 35%;min-height: 35%;overflow: hidden;
+        display: flex;flex-direction:column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        border: solid 1px white;border-radius: 0px 20px; }
+
+/*------------------- -galSectionFPh ---------------------------------*/
+    #gal-s {position: relative; width:100%;min-width: 100%;height:100%;min-height: 100%;
+        display: grid;grid-template-rows: 100%;grid-template-columns: repeat(2, 1fr);
+        align-items: center;justify-items: center;
+        background-color:var(--segundo-cl) ;/*border: solid 1px white;*/}
+
+    .cnt-gal-cf {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:space-evenly;
+        /*border: solid 1px white;*/}
+
+    .at-gal-cf {width:90%;min-width:90%;height: 35%;min-height: 35%;overflow: hidden;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        border: solid 1px white;border-radius: 0px 20px; }
+
+/*------------- -productSections  / en 8 articulos*/
+
+.item-img {width: 80%;}
+.item-img-cef:hover .item-img {width: 30%;transition: all 0.5s ease;}
+
+
+/*------------ -srvLeftOne / Motores ----------*/
+#at-left-one-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-one-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-one-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -srvLeftTwo / Motores ----------*/
+#at-left-two-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-two-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-two-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+/*------------ -srvRightOne / Motores ----------*/
+#at-right-one-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-one-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-one-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -srvRightTwo / Motores ----------*/
+#at-right-two-srv header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-two-srv header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-two-srv p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+
+
+
+/*------------ -galLeftOne / Motores ----------*/
+#at-left-one-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-one-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-one-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -galLeftTwo / Motores ----------*/
+#at-left-two-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-left-two-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-left-two-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+/*------------ -galRightOne / Motores ----------*/
+#at-right-one-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-one-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-one-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+/*------------ -galRightTwo / Motores ----------*/
+#at-right-two-gal header {width:100%;height: 20%;
+        background-color: var(--tercer-cl) ;}
+
+#at-right-two-gal header h3 {width:100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+        color: var(--segundo-cl);}
+    
+#at-right-two-gal p {width:100%;height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color:var(--primer-cl); }
+
+
+    
+/*------------------- -ctcSectionFPh ---------------------------------*/
+    #ctc-s {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: grid;grid-template-rows: repeat(2, 1fr);grid-template-columns: 100%;
+        align-items: center;justify-items: center;
+       background: linear-gradient(45deg, var(--primer-cl) 20%, transparent),
+       url(Img/i-e-1.jpg);background-size: cover;background-repeat: no-repeat;
+       /*background-position: bottom;*/
+        /*border: solid 1px white;*/}
+
+    .cnt-ctc-cf {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/}
+
+    .at-ctc-cf {width:90%;min-width: 90%;height: 70%;min-height: 70%;
+        display: flex;flex-direction: column;flex-wrap: nowrap;
+        align-items: center;justify-content:center;
+        /*border: solid 1px white;*/}
+
+/*---------- -articleLeftFPh  / visitanos -----------------*/
+
+#at-left-ctc {width: 95%;min-width: 95%;
+    display:flex;flex-direction: column;flex-wrap:nowrap;
+    align-items: flex-start;justify-content: center; color: var(--tercer-cl);}
+
+#at-left-ctc header {padding-bottom: 1%;margin-bottom:1%;width:100%;min-width: 100%;height: 15%;
+    font-size: 100%;
+    display: flex;flex-direction: column;flex-wrap: wrap;
+    align-items: center;justify-content: center;
+     background-color: var(--segundo-cl) ;color:var(--tercer-cl);
+     border-radius: 0px 35px;
+    }
+
+#at-left-ctc h3 {font-size: 120%;font-family: oswald;}
+
+#ctc-info {width: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    gap: 10px;align-items: flex-start;justify-content: flex-start;}
+
+#ctc-nets {width: 100%;
+    display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 100%;
+    align-items: center;justify-content: flex-start;}
+
+#ctc-nets span {display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content: flex-start;}
+
+#ctc-nets span img {width: 15%;}
+
+#at-left-ctc footer {padding-top: 0%; width: 100%;min-width: 100%;font-size: 130%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items:center;justify-content:center;}
+
+/*---------- -articleRightFPh  / contactanos -----------------*/
+
+#at-right-ctc {width: 90%;min-width:90%;color: var(--tercer-cl);
+    display:flex;flex-direction: column;flex-wrap:nowrap;
+    align-items: flex-start;justify-content: center;}
+
+#at-right-ctc header {padding-bottom:0%;width:100%;min-width:100%;height: 18%;
+    font-size:100%;
+    display: flex;flex-direction: column; flex-wrap: wrap;
+    align-items: center;justify-content: center;
+    background-color: var(--segundo-cl);color: var(--tercer-cl);
+    border-radius: 0px 35px;}
+
+/*---------   -formPageFPh / -----------------------*/
+
+#at-right-ctc form {width: 100%;min-width: 100%;}
+
+#at-right-ctc form  .npt {width: 95%;min-width: 95%;color:var(--segundo-cl);
+    font-size: 100%;font-family: oswald;
+    background-color: transparent;border:solid var(--cuarto-cl) 2px; border-radius: 8px;}
+
+#at-right-ctc form textarea {height: 30%;}
+
+#at-right-ctc form  .sbmt {width: 47%;min-width: 47%;color:var(--primer-cl);
+    font-family: oswald;font-size: 110%;color: var(--segundo-cl);
+    background-color:var(--tercer-cl);border:0; border-radius: 8px;}
+
+
+
+
+/*----------------    -menuLayerFPh  --------------------------*/
+
+#menu-layer {position: fixed;z-index:4;width:100%;min-width: 100%;height:100%;min-height:100%;
+    display: grid;grid-template-columns: 100%;grid-template-rows: 15% 85%;
+    /*border: solid 1px white;*/
+    transition: all 0.5s ease-in-out;}
+
+#brand-s-menu {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+    display: grid;grid-template-rows: 100%;grid-template-columns: 30% 70%;
+    align-items: center;justify-items: center;
+    background:linear-gradient(90deg, var(--primer-cl) 10%, var(--cuarto-cl) ) ;
+    /*border: solid 1px white;*/}
+
+.brand-cf {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+    display: flex;flex-direction: row;flex-wrap: wrap;
+    align-items: center;justify-content:center;color: var(--tercer-cl) ; font-size: 140%;
+    /*border: solid 1px white;*/}
+
+#logo-mn {width:90%;}
+        
+#nav-menu {width:100%;min-width: 100%;height: 100%;min-height: 100%;
+    display: grid;grid-template-rows: repeat(4, 1fr);grid-template-columns: 100%;
+    align-items: center;justify-items: center;
+    background-color: var(--primer-cl);/*border: solid 1px white;*/}
+    
+#nav-menu a {width:100%;min-width:100%;height: 100%;min-height: 100%;
+    display: flex;flex-direction:row;flex-wrap: wrap;
+    align-items: center;justify-content:center;
+    text-decoration: none;color: white;font-size: 130%;
+    /*border: solid 1px white;*/
+    transition: all 0.5s ease;}
+
+#nav-menu a:hover {background-color: var(--tercer-cl);color: var(--segundo-cl);font-size: 180%;}
+
+.us-active {color:var(--segundo-cl)!important;font-size: 180% !important; background-color: var(--tercer-cl);}
+.srv-active { color:var(--segundo-cl)!important;font-size: 180% !important; background-color: var(--tercer-cl);}
+.gal-active { color:var(--segundo-cl)!important;font-size: 180% !important; background-color: var(--tercer-cl);}
+.ctc-active { color:var(--segundo-cl)!important;font-size: 180% !important; background-color: var(--tercer-cl);}
+
+.menu-vsb {clip-path: circle(140% at 100% 0% );}
+.menu-hdd {clip-path: circle(0% at 100% 0% );}
+
+/*--------------   -buttonLayerFPh  / page button -----------*/
+
+#bt-layer {position: fixed;z-index: 8;width: 50px;height: 50px;top: 8px;right: 8px;overflow: hidden;
+    /*border: solid 2px white;border-radius: 5px;*/}
+
+.lns-bt-cf {position:absolute;width:90%;height: 1px;
+    border: solid 2px var(--primer-cl);transition: all 0.5s ease;}
+
+#top-ln-bt {top: 25%;} #middle-ln-bt {top: 50%;} #bottom-ln-bt {top: 75%;}
+
+#bt-layer:hover {cursor: pointer;}
+
+#check-bt {position: fixed;z-index: 12; top: 5px;right: 80px;visibility:hidden;}
+#check-bt:checked ~ #bt-layer :nth-child(1) {transform: rotate(45deg);top: 50%; }
+#check-bt:checked ~ #bt-layer :nth-child(3) {transform: rotate(-45deg);top: 50%; }
+#check-bt:checked ~ #bt-layer :nth-child(2) {transform: translateY(50px)}
+}
